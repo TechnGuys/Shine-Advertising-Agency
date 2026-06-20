@@ -6,28 +6,20 @@ import { ChevronDown } from "lucide-react";
 
 const FAQS = [
   {
-    q: "What areas/cities do you provide services in?",
-    a: "We are based in Lahore and provide event management, branding and printing services across Lahore and nearby cities. For large-scale projects, we can travel to other locations as well.",
+    q: "What services does Shine Advertising Agency provide?",
+    a: "We offer complete branding and advertising solutions, including branding, 3D sign boards, event design & management, brand activations, kiosk and shop fabrication, and custom design and fabrication services.",
   },
   {
-    q: "How far in advance should I book your services?",
-    a: "For corporate events and large activations, we recommend booking 2-4 weeks in advance. For smaller setups, printing or branding work, we can often accommodate shorter timelines too.",
+    q: "Do you handle projects from concept to execution?",
+    a: "Yes. We manage every project end-to-end, from concept development and design to fabrication, setup, coordination and on-ground execution.",
   },
   {
-    q: "Do you handle everything in-house or outsource work?",
-    a: "We manage planning, design, branding, printing, stage setup and media arrangements in-house with our own team, ensuring consistent quality and smooth coordination from start to finish.",
+    q: "Can you create custom designs based on our requirements?",
+    a: "Absolutely. We offer customized design and fabrication services tailored to your specific brand guidelines, space requirements and project goals.",
   },
   {
-    q: "Can you manage both small and large-scale events?",
-    a: "Yes. Whether it's a small indoor setup or a large-scale promotional campaign, our team scales resources and planning to match the size and requirements of your event.",
-  },
-  {
-    q: "What is included in your printing & branding services?",
-    a: "Our printing and branding services include indoor/outdoor flex printing, promotional materials, exhibition and stall branding, signage and creative advertising material tailored to your brand.",
-  },
-  {
-    q: "How can I get a quotation for my project?",
-    a: "Simply contact us via call, WhatsApp or email with your event details and requirements, and our team will get back to you with a tailored quotation.",
+    q: "Do you manage events and brand activations?",
+    a: "Yes, we manage events end-to-end covering concept development, fabrication, setup, coordination and execution for corporate events, brand launches, exhibitions and trade shows.",
   },
 ];
 

@@ -3,32 +3,20 @@
 import { motion } from "framer-motion";
 import {
   PartyPopper,
-  Building2,
   Layers,
-  Printer,
-  Sparkles,
   LayoutTemplate,
   Megaphone,
-  Users2,
   Rocket,
   Store,
-  Lightbulb,
-  Speaker,
 } from "lucide-react";
 
 const SERVICES = [
-  { icon: PartyPopper, title: "Event Management & Planning", desc: "End-to-end planning and execution for events of any scale." },
-  { icon: Building2, title: "Corporate & Social Event Organizing", desc: "Seamless organizing for corporate and social gatherings." },
-  { icon: Layers, title: "Indoor & Outdoor Flex Branding", desc: "High-impact flex branding for indoor and outdoor spaces." },
-  { icon: Printer, title: "Printing & Promotional Material", desc: "Quality printing and promotional materials for every campaign." },
-  { icon: Sparkles, title: "WHOH Auto Foam Media Solutions", desc: "Eye-catching foam media solutions that stand out." },
-  { icon: LayoutTemplate, title: "Stage Setup & Event Decorations", desc: "Stunning stage setups and decor tailored to your event." },
-  { icon: Megaphone, title: "Brand Promotions & Marketing", desc: "Creative campaigns that boost brand visibility and reach." },
-  { icon: Users2, title: "Chaos Branding & Crowd Engagement", desc: "Bold, creative crowd engagement that gets noticed." },
-  { icon: Rocket, title: "Product Launch Events", desc: "Memorable launch events that make a strong first impression." },
-  { icon: Store, title: "Exhibition & Stall Branding", desc: "Custom stall and exhibition branding that attracts visitors." },
-  { icon: Lightbulb, title: "Sound, Lighting & Media Arrangements", desc: "Professional sound, lighting and media for flawless events." },
-  { icon: Speaker, title: "Creative Advertising Campaigns", desc: "Publicity campaigns crafted to leave a lasting impression." },
+  { icon: Megaphone, title: "Branding & Advertising", desc: "Indoor and outdoor branding solutions including mall branding, retail displays, and promotional visuals, executed with precision to enhance brand visibility and consistency." },
+  { icon: LayoutTemplate, title: "3D Sign Boards", desc: "Custom-designed 3D sign boards using high-quality materials and modern fabrication techniques for shops, offices, and commercial spaces." },
+  { icon: PartyPopper, title: "Event Design & Management", desc: "Complete event solutions covering design, setup, coordination, and on-ground execution for corporate events, launches, and exhibitions." },
+  { icon: Rocket, title: "Brand Activations", desc: "Engaging brand activations including mall activations, roadshows, and promotional campaigns designed to connect brands with their audience." },
+  { icon: Store, title: "Kiosk & Shop Fabrication", desc: "Custom-built kiosks, shops, and retail displays fabricated with durability, functionality, and premium finishing." },
+  { icon: Layers, title: "Custom Work & Design", desc: "Tailor-made design and fabrication solutions developed to meet unique project requirements and specifications." },
 ];
 
 export default function Services() {

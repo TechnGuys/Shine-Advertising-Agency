@@ -27,9 +27,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl font-extrabold leading-tight text-[var(--color-ink)] sm:text-5xl lg:text-6xl"
+            className="text-4xl font-extrabold leading-tight text-[var(--color-teal)] sm:text-5xl lg:text-6xl"
           >
-            Your Vision, <span className="text-[var(--color-teal)]">Our Creative</span> Execution
+            Events, Branding, Activations & Custom Fabrication
           </motion.h1>
 
           <motion.p
@@ -38,9 +38,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-xl text-base text-zinc-600 sm:text-lg"
           >
-            We turn ideas into unforgettable experiences — from corporate events
-            and branding to flex printing and promotional campaigns, all under
-            one roof.
+            With years of hands-on industry experience, Shine Advertising
+            Agency specializes in branding, event management, brand
+            activations and kiosk &amp; shop fabrication. From concept to
+            on-ground delivery, we turn ideas into high-quality physical
+            brand experiences.
           </motion.p>
 
           <motion.div
@@ -51,15 +53,15 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="flex items-center gap-2 rounded-full bg-[var(--color-teal)] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition-transform hover:scale-105"
+              className="flex items-center gap-2 rounded-full bg-[var(--color-ink)] px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
             >
               Get a Quote <ArrowRight size={18} />
             </a>
             <a
-              href="tel:923214924370"
+              href="#portfolio"
               className="flex items-center gap-2 rounded-full border border-zinc-300 px-7 py-3.5 text-sm font-semibold text-[var(--color-ink)] transition-colors hover:bg-zinc-100"
             >
-              <PhoneCall size={18} /> Call Us Now
+              <PhoneCall size={18} /> View Our Work
             </a>
           </motion.div>
 

@@ -51,14 +51,21 @@ export default function About() {
               About Us
             </span>
             <h2 className="section-heading-underline mt-2 inline-block text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
-              Creativity, Commitment & Customer Satisfaction
+              Who We Are
             </h2>
             <p className="mt-5 text-zinc-600">
-              Shine Advertising Agency is a complete partner for event
-              management, branding, printing and promotional solutions. We
-              bring ideas to life with creative execution, quality materials
-              and dedicated planning — delivering memorable experiences for
-              every client, every time.
+              Shine Advertising Agency is a full-service brand-execution
+              company specializing in branding, event management, brand
+              activations and kiosk &amp; shop fabrication. With years of
+              hands-on industry experience, we deliver high-quality projects
+              to agencies and brands, working as a trusted on-ground
+              execution partner.
+            </p>
+            <p className="mt-4 text-zinc-600">
+              We continue to deliver our solutions tactfully and efficiently,
+              with a strong commitment to quality. We invite you to partner
+              with us for reliable, creative and professionally delivered
+              branding solutions.
             </p>
           </motion.div>
 
