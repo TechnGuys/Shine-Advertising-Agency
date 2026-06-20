@@ -56,7 +56,7 @@ export default function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="overflow-hidden rounded-2xl border border-zinc-100 bg-zinc-50"
+                className="overflow-hidden rounded-2xl border border-zinc-100 bg-zinc-50 border-zinc-100"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
