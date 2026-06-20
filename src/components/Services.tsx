@@ -33,13 +33,13 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-white py-24">
+    <section id="services" className="bg-[#f4f6fb] py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-gold-dark)]">
+          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-teal-dark)]">
             What We Do
           </span>
-          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
             Our Services
           </h2>
           <p className="mt-5 text-zinc-600">
@@ -57,15 +57,21 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
-              className="group rounded-2xl border border-zinc-100 bg-white p-7 shadow-sm transition-all hover:-translate-y-1.5 hover:shadow-xl hover:shadow-amber-100"
+              className="group rounded-2xl border border-zinc-100 bg-white p-7 shadow-sm transition-all hover:-translate-y-1.5 hover:shadow-xl hover:shadow-teal-100"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-gold-dark)] text-[var(--color-navy)] transition-transform group-hover:scale-110">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl border-2 border-[var(--color-teal)] text-[var(--color-teal)] transition-transform group-hover:scale-110 group-hover:bg-[var(--color-teal)] group-hover:text-white">
                 <service.icon size={22} />
               </div>
-              <h3 className="mt-5 text-lg font-bold text-[var(--color-navy)]">
+              <h3 className="mt-5 text-lg font-bold text-[var(--color-ink)]">
                 {service.title}
               </h3>
               <p className="mt-2 text-sm text-zinc-600">{service.desc}</p>
+              <a
+                href="#contact"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-teal-dark)] transition-colors hover:text-[var(--color-teal)]"
+              >
+                Read More &rarr;
+              </a>
             </motion.div>
           ))}
         </div>

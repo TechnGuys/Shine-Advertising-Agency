@@ -25,13 +25,13 @@ export default function Portfolio() {
     active === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === active);
 
   return (
-    <section id="portfolio" className="bg-zinc-50 py-24">
+    <section id="portfolio" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-gold-dark)]">
+          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-teal-dark)]">
             Our Work
           </span>
-          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
             Portfolio & Projects
           </h2>
           <p className="mt-5 text-zinc-600">
@@ -48,8 +48,8 @@ export default function Portfolio() {
               onClick={() => setActive(cat)}
               className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
                 active === cat
-                  ? "bg-[var(--color-navy)] text-white"
-                  : "bg-white text-zinc-600 hover:bg-amber-50"
+                  ? "bg-[var(--color-teal)] text-white"
+                  : "bg-zinc-100 text-zinc-600 hover:bg-teal-50"
               }`}
             >
               {cat}
@@ -67,13 +67,13 @@ export default function Portfolio() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--color-navy)] to-[var(--color-navy-light)]"
+                className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-zinc-100"
               >
-                <div className="absolute inset-0 flex items-center justify-center text-white/20 transition-transform duration-500 group-hover:scale-110">
+                <div className="absolute inset-0 flex items-center justify-center text-zinc-300 transition-transform duration-500 group-hover:scale-110">
                   <ImageIcon size={48} />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/10 to-transparent p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-gold)]">
+                  <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-teal-light)]">
                     {project.category}
                   </span>
                   <h3 className="mt-1 text-lg font-bold text-white">

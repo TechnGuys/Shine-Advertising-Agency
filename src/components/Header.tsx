@@ -7,11 +7,11 @@ import { Menu, X, Phone } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Process", href: "#process" },
   { label: "Team", href: "#team" },
-  { label: "FAQs", href: "#faqs" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -28,22 +28,16 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${
+        scrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-10">
         <Link href="#home" className="flex items-center gap-2">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-gold-dark)] text-lg font-extrabold text-[var(--color-navy)]">
+          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-teal)] text-lg font-extrabold text-white">
             S
           </div>
-          <span
-            className={`text-lg font-bold tracking-tight ${
-              scrolled ? "text-[var(--color-navy)]" : "text-white"
-            }`}
-          >
+          <span className="text-lg font-bold tracking-tight text-[var(--color-ink)]">
             Shine Advertising
           </span>
         </Link>
@@ -53,9 +47,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-[var(--color-gold)] ${
-                scrolled ? "text-[var(--color-navy)]" : "text-white"
-              }`}
+              className="text-sm font-medium text-zinc-700 transition-colors hover:text-[var(--color-teal)]"
             >
               {link.label}
             </a>
@@ -64,16 +56,16 @@ export default function Header() {
 
         <a
           href="tel:923214924370"
-          className="hidden items-center gap-2 rounded-full bg-[var(--color-gold)] px-5 py-2.5 text-sm font-semibold text-[var(--color-navy)] shadow-md transition-transform hover:scale-105 lg:flex"
+          className="hidden items-center gap-2 rounded-full bg-[var(--color-ink)] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-transform hover:scale-105 lg:flex"
         >
           <Phone size={16} />
-          +92 321 49 24 370
+          Get Started
         </a>
 
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className={`lg:hidden ${scrolled ? "text-[var(--color-navy)]" : "text-white"}`}
+          className="text-[var(--color-ink)] lg:hidden"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -93,14 +85,14 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-[var(--color-navy)] hover:bg-amber-50"
+                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-[var(--color-ink)] hover:bg-teal-50"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="tel:923214924370"
-                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[var(--color-gold)] px-5 py-2.5 text-sm font-semibold text-[var(--color-navy)]"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[var(--color-teal)] px-5 py-2.5 text-sm font-semibold text-white"
               >
                 <Phone size={16} />
                 Call Us

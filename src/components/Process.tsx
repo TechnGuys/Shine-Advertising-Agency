@@ -28,46 +28,70 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section id="process" className="bg-white py-24">
+    <section id="process" className="bg-zinc-50 py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-10">
-        <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-gold-dark)]">
-            Our Process
-          </span>
-          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-navy)] sm:text-4xl">
-            How We Work
-          </h2>
-          <p className="mt-5 text-zinc-600">
-            A simple, transparent process designed for smooth execution from
-            start to finish.
-          </p>
-        </div>
-
-        <div className="relative mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="absolute top-7 left-0 right-0 hidden h-px bg-zinc-200 lg:block" />
-          {STEPS.map((step, i) => (
-            <motion.div
-              key={step.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="relative flex flex-col items-center text-center"
+        <div className="grid items-start gap-12 lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:sticky lg:top-28"
+          >
+            <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-teal-dark)]">
+              How We Work
+            </span>
+            <h2 className="section-heading-underline mt-2 inline-block text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
+              We Care for Every Brand
+            </h2>
+            <p className="mt-5 max-w-md text-zinc-600">
+              A simple, transparent process designed for smooth execution from
+              start to finish — from the first conversation to the final
+              event-day delivery.
+            </p>
+            <a
+              href="#contact"
+              className="mt-7 inline-flex items-center gap-2 rounded-full bg-[var(--color-teal)] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition-transform hover:scale-105"
             >
-              <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-gold)] to-[var(--color-gold-dark)] text-[var(--color-navy)] shadow-lg shadow-amber-200">
-                <step.icon size={24} />
-              </div>
-              <span className="mt-4 text-xs font-bold uppercase tracking-wider text-zinc-400">
-                Step 0{i + 1}
-              </span>
-              <h3 className="mt-2 text-lg font-bold text-[var(--color-navy)]">
-                {step.title}
-              </h3>
-              <p className="mt-2 max-w-xs text-sm text-zinc-600">
-                {step.desc}
-              </p>
-            </motion.div>
-          ))}
+              Contact Us
+            </a>
+          </motion.div>
+
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {STEPS.map((step, i) => {
+              const filled = i === 0;
+              return (
+                <motion.div
+                  key={step.title}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className={`rounded-2xl p-7 shadow-sm ${
+                    filled
+                      ? "bg-[var(--color-teal)] text-white"
+                      : "bg-white text-[var(--color-ink)]"
+                  }`}
+                >
+                  <span
+                    className={`text-3xl font-extrabold ${
+                      filled ? "text-white/40" : "text-[var(--color-teal)]/30"
+                    }`}
+                  >
+                    0{i + 1}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold">{step.title}</h3>
+                  <p
+                    className={`mt-2 text-sm ${
+                      filled ? "text-white/80" : "text-zinc-600"
+                    }`}
+                  >
+                    {step.desc}
+                  </p>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

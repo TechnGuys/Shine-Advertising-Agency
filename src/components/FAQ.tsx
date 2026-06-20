@@ -38,10 +38,10 @@ export default function FAQ() {
     <section id="faqs" className="bg-white py-24">
       <div className="mx-auto max-w-4xl px-5 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-gold-dark)]">
+          <span className="text-sm font-semibold uppercase tracking-wider text-[var(--color-teal-dark)]">
             Got Questions?
           </span>
-          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-navy)] sm:text-4xl">
+          <h2 className="section-heading-underline mx-auto mt-2 inline-block text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
             Frequently Asked Questions
           </h2>
         </div>
@@ -62,13 +62,13 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                 >
-                  <span className="font-semibold text-[var(--color-navy)]">
+                  <span className="font-semibold text-[var(--color-ink)]">
                     {faq.q}
                   </span>
                   <motion.span
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="flex-shrink-0 text-[var(--color-gold-dark)]"
+                    className="flex-shrink-0 text-[var(--color-teal-dark)]"
                   >
                     <ChevronDown size={20} />
                   </motion.span>
